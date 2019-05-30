@@ -1,6 +1,12 @@
 *, *::after, *::before {
     box-sizing: border-box;
     }
+
+    .clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+    }
   
   .container {
     margin: 0 auto;
@@ -13,13 +19,33 @@
     }
 
   header {
-      background-color: antiquewhite;
-      height: 50px;
-      padding: 10px;
-    }
-
-  footer {
     background-color: antiquewhite;
     height: 50px;
+    padding: 10px;
+    }
+
+    footer {
+    background-color: antiquewhite;
+    height: 50px;
+    padding: 10px;
+    }
+
+    nav {
+    background-color: aqua;
+    height: 50px;
+    padding: 10px;
+    }
+
+    aside {
+    background-color: aquamarine;
+    width: 400px;
+    height: 300px;
+    float: right;
+    padding: 10px;
+    }
+
+    section {
+    background-color: blueviolet;
+    height: 300px;
     padding: 10px;
     }
